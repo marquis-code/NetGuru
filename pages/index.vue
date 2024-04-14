@@ -6,7 +6,6 @@
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt=""> -->
               <svg class="netguru-logo__icon" width="130" height="25" viewBox="0 0 322 62" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>Netguru logo</title>
@@ -50,12 +49,13 @@
           </div>
           <div class="flex lg:hidden">
             <button @click="isSideNavOpen = true" type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-              <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-50 bg-black">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg> Open here
             </button>
           </div>
 
@@ -183,27 +183,13 @@
 
       <div class="relative isolate overflow-hidden pt-14">
         <img src="@/assets/img/bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
-        <!-- <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true">
-          <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-          </div>
-        </div> -->
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div
-              class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Announcing our next round of funding. <a href="#" class="font-semibold text-white"><span
-                  class="absolute inset-0" aria-hidden="true"></span>Read more <span
-                  aria-hidden="true">&rarr;</span></a>
-            </div>
-          </div> -->
           <div class="text-center">
             <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl"><span class="text-blue-500">Product
                 Management</span> Consulting
             </h1>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Go beyond building things right and build the right things.
+            <p class="mt-6 text-sm lg:text-lg leading-8 text-gray-100">Go beyond building things right and build the
+              right things.
               Create products that deliver success and value with world-class product management.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="#"
@@ -213,24 +199,21 @@
             </div>
           </div>
         </div>
-        <!-- <div
-          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true">
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-          </div>
-        </div> -->
       </div>
     </div>
-    <div class="flex justify-center items-center lg:gap-x-32 py-3">
-      <a href="#overview" class="text-sm font-light text-gray-400 py-2.5 px-6">Overview</a>
-      <a href="#expertise" class="text-sm font-light text-gray-400 py-2.5 px-6">Expertise</a>
-      <a href="#work" class="text-sm font-light text-gray-400 py-2.5 px-6">Work with us</a>
+    <div class="sticky top-0 z-50 border-b border-gray-100 bg-white">
+      <div class="flex justify-center items-center lg:gap-x-32 py-3">
+        <a href="#overview" class="text-sm font-light text-gray-400 py-2.5 px-6">Overview</a>
+        <a href="#expertise" class="text-sm font-light text-gray-400 py-2.5 px-6">Expertise</a>
+        <a href="#work" class="text-sm font-light text-gray-400 py-2.5 px-6">Work with us</a>
+      </div>
     </div>
-    <section id="overview" class="px-6 lg:px-0 lg:max-w-6xl mx-auto lg:flex justify-between py-32">
+    <!-- <DeliveryCarousel /> -->
+    <section id="overview"
+      class="px-6 lg:px-0 lg:max-w-6xl mx-auto lg:flex space-y-6 lg:space-y-0 justify-between py-16 lg:py-32">
       <div class="">
-        <h1 class="text-4xl font-semibold leading-relaxed max-w-lg"><span class="text-blue-500">95% </span>of new
+        <h1 class="text-2xl lg:text-4xl font-semibold leading-relaxed max-w-lg"><span class="text-blue-500">95%
+          </span>of new
           digital
           products and <span class="text-blue-500">84%</span> of digital transformations fail</h1>
       </div>
@@ -247,17 +230,19 @@
       <div class="bg-gray-100 py-16">
         <div class="max-w-3xl mx-auto">
           <div class="flex justify-center items-center flex-col">
-            <h2 class="text-3xl font-medium tracking-tight text-gray-900 text-center max-w-sm">Why you should choose
+            <h2 class="lg:text-3xl font-medium tracking-tight text-gray-900 text-center max-w-sm text-xl">Why you should
+              choose
               product
               management services
             </h2>
-            <p class="mt-4 text-gray-500 text-center max-w-sm">All-in-one - a product expert will drive the development
+            <p class="mt-4 text-gray-500 text-center max-w-sm font-thin text-sm">All-in-one - a product expert will
+              drive the development
               of your
               project</p>
           </div>
         </div>
         <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">
-          <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
             <div class="flex justify-center items-center flex-col gap-y-3">
               <div class="h-16 w-16 rounded-full flex justify-center items-center  bg-white relative">
                 <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Real-estate.svg" alt=""
@@ -305,7 +290,7 @@
           </div>
         </div>
         <div class="flex justify-center items-center">
-          <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-2 gap-x-2">Let's work
+          <p class="border-b border-gray-500 font-semibold flex items-center cursor-pointer pb-0.5 gap-x-2">Let's work
             together <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none"
               stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9 18l6-6-6-6" />
@@ -320,7 +305,7 @@
           <p class="sr-only">5 out of 5 stars</p>
           <blockquote
             class="mt-10 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
-            <p class="relative max-w-lg leading-relaxed">
+            <p class="relative max-w-lg leading-relaxed text-xl lg:text-2xl">
               <svg class="quote h-10 w-10 lg:absolute -left-14 top-0" viewBox="0 0 60 42"
                 xmlns="http://www.w3.org/2000/svg" fill="blue">
                 <path
@@ -342,7 +327,7 @@
               <div class="mt-0.5 text-gray-600">Chief Digital Officer at Artemest</div>
             </div>
           </figcaption>
-        </figure>
+        </figure>o
         <div class="flex justify-center items-center">
           <img src="https://www.netguru.com/hubfs/dotted-map-gray.png" class="absolute bottom-0" />
         </div>
@@ -351,16 +336,19 @@
     <section>
       <div class="bg-gray-100 py-24 sm:py-32">
         <div class="lg:flex space-y-10 lg:space-y-0 p-6 lg:p-0 max-w-7xl mx-auto gap-x-10">
-          <div class="space-y-6">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-xl max-w-sm">Develop your product with
+          <div class="space-y-6 flex justify-center items-center flex-col lg:justify-start lg:items-start">
+            <h2
+              class="text-xl font-bold tracking-tight text-gray-900 sm:text-lg max-w-md lg:max-w-sm text-center lg:text-start">
+              Develop your product with
               the help
               of <span class="text-blue-500 text-w">experienced Product Managers</span></h2>
-            <p class="text-sm leading-loose">Develop your product with the help of experienced Product ManagersOur
+            <p class="text-sm leading-loose text-center lg:text-start">Develop your product with the help of experienced
+              Product ManagersOur
               expert and holistic
               approach,
               paired with an entrepreneurial spirit, gives you a trusted partner to help build real, working software.
             </p>
-            <div class="flex justify-start items-start pt-6 lg:pt-14">
+            <div class="hidden lg:flex justify-start items-start pt-6 lg:pt-14">
               <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-0.5 gap-x-2">Let's work
                 together <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none"
                   stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -415,6 +403,13 @@
                 concentrated on Product Research, Discovery, and Validation services.</dd>
             </div>
           </dl>
+          <div class="flex justify-center items-center lg:hidden pt-6 lg:pt-14">
+            <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-0.5 gap-x-2">Let's work
+              together <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none"
+                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg></p>
+          </div>
         </div>
       </div>
 
@@ -436,7 +431,7 @@
           </div> -->
           <div
             class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <div class="bg-gray-100 rounded-lg max-w-sm p-10 space-y-6">
+            <div class="bg-gray-100 rounded-lg w-full max-w-7xl lg:max-w-sm p-10 space-y-6">
               <h1 class="font-semibold text-xl">Contents</h1>
               <div class="space-y-4 font-light">
                 <a href="#step1" class="block text-sm text-gray-500 hover:text-gray-700">What is the role of a software
@@ -453,7 +448,7 @@
                   applied in different
                   industries?</a>
                 <a href="#step7" class="block text-sm text-gray-500 hover:text-gray-700">Why hire Netguru for Product
-                  M</a>
+                </a>
               </div>
             </div>
           </div>
@@ -463,7 +458,7 @@
               <div class="max-w-7xl text-base leading-7 text-gray-700 lg:max-w-7xl">
 
                 <div id="step1" class="space-y-6 leading-relaxed">
-                  <h1 class="mt-2 text-3xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">
+                  <h1 class="mt-4.5 text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">
                     What
                     is the role
                     of a
@@ -513,8 +508,9 @@
                   </ul>
                 </div>
 
-                <div id="step2">
-                  <h2 class="mt-16 text-2xl font-semibold tracking-tight text-gray-900">Why research is vital for your
+                <div id="step2" class="pt-6">
+                  <h2 class="text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">Why
+                    research is vital for your
                     product?</h2>
                   <p class="mt-6">In-depth research is core for a Product Manager. Being a voice for the market requires
                     tremendous and up-to-date market knowledge, followed by tracing and identifying market trends and
@@ -525,8 +521,9 @@
                     quantitative research helps you make the right decisions.</p>
                 </div>
 
-                <div id="step3">
-                  <h2 class="mt-16 text-2xl font-semibold tracking-tight text-gray-900">Why is validation a business
+                <div id="step3" class="pt-6">
+                  <h2 class="text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">Why is
+                    validation a business
                     life-saver?</h2>
                   <p class="mt-6">An idea that is not verified is just a hypothesis. A key Product Manager
                     responsibility
@@ -548,8 +545,9 @@
 
 
 
-                <div id="step4">
-                  <h2 class="mt-16 text-xl font-semibold tracking-tight text-gray-900">What are the key aims of product
+                <div id="step4" class="pt-6">
+                  <h2 class="text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">What are
+                    the key aims of product
                     management?</h2>
                   <p class="mt-6">Product management is an organizational function within a business that deals with
                     product development and justification. It focuses on bringing a new and effective product to market
@@ -584,8 +582,9 @@
                   </p>
                 </div>
 
-                <div id="step5">
-                  <h2 class="mt-16 text-xl font-semibold tracking-tight text-gray-900">Why communication is key in
+                <div id="step5" class="pt-6">
+                  <h2 class="text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">Why
+                    communication is key in
                     product
                     management?</h2>
                   <p class="mt-6">Dealing with dozens of internal and external stakeholders requires being a great
@@ -599,8 +598,9 @@
                     ensures every person in the organization is aligned with a common goal.</p>
                 </div>
 
-                <div id="step6">
-                  <h2 class="mt-16 text-xl font-semibold tracking-tight text-gray-900">How is product management applied
+                <div id="step6" class="pt-6">
+                  <h2 class="text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">How is
+                    product management applied
                     in
                     different industries?</h2>
                   <p class="mt-6">Businesses in all industries can benefit from product management services. Every
@@ -614,8 +614,9 @@
                     we shared above to working with family banking companies, and much more.</p>
                 </div>
 
-                <div id="step7">
-                  <h2 class="mt-16 text-xl font-semibold tracking-tight text-gray-900">Why hire Netguru for Product
+                <div id="step7" class="pt-6">
+                  <h2 class="text-xl leading-loose font-bold tracking-tight text-gray-900 sm:text-3xl">Why hire
+                    Netguru for Product
                     Management Consulting?</h2>
                   <p class="mt-6">By working with Netguru throughout the entire product lifecycle, you have a trusted
                     partner who’s there to help you build well-researched and effective software. We offer end-to-end
@@ -636,8 +637,9 @@
     </section>
     <section id="expertise" class="p-6 lg:p-0 space-y-6 lg:space-y-0 max-w-6xl mx-auto lg:flex justify-between py-10">
       <div class="">
-        <h1 class="text-4xl font-semibold leading-relaxed max-w-lg">Empowering businesses to succeed with <span
-            class="text-blue-500">world-class product management</span></h1>
+        <h1 class="text-2xl lg:text-4xl font-semibold leading-relaxed max-w-lg">Empowering businesses to succeed with
+          <span class="text-blue-500">world-class product management</span>
+        </h1>
       </div>
       <div class="">
         <p class="leading-loose font-light text-gray-500 max-w-lg">The majority of new digital products fail, with 35%
@@ -646,56 +648,51 @@
           enhance the success of their products.</p>
       </div>
     </section>
-    <section class="bg-gray-100">
-      <div class="overflow-hidden bg-gray-100 py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
-          <div
-            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div class="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div class="lg:max-w-lg">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Artemest — <span
-                    class="text-blue-500">renovating an Italian ecommerce platform</span></p>
-                <p class="mt-6 text-lg leading-8 text-gray-900 font-semibold">Netguru’s product management expertise
-                  enabled Artemest
-                  to adjust for exponential growth</p>
-                <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  <div class="relative space-y-6">
-                    <dd class="block font-light text-gray-500">Artemest is a native mobile app featuring curated home
-                      décor, jewelry, and
-                      lifestyle art created by over 500 top Italian artists. Users explore handcrafted art and shop
-                      directly on the app, which also offers an augmented reality module to preview luxury items right
-                      in the home.</dd>
+    <section class="bg-gray-100 pt-10 lg:mt-32">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 p-6 lg:p-0 max-w-screen-2xl mx-auto">
+        <div class="rounded-lg bg-gray-200">
+          <img class="rounded-lg"
+            src="https://www.netguru.com/hs-fs/hubfs/Artemest_native_app.jpg?width=867&height=740&name=Artemest_native_app.jpg"
+            alt="">
+        </div>
+        <div class="lg:pl-10">
+          <div class="lg:max-w-lg">
+            <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Artemest — <span
+                class="text-blue-500">renovating an Italian ecommerce platform</span></p>
+            <p class="mt-6 text-sm lg:text-lg leading-8 text-gray-900 font-semibold">Netguru’s product management
+              expertise
+              enabled Artemest
+              to adjust for exponential growth</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <div class="relative space-y-6">
+                <dd class="block font-light text-gray-500">Artemest is a native mobile app featuring curated home
+                  décor, jewelry, and
+                  lifestyle art created by over 500 top Italian artists. Users explore handcrafted art and shop
+                  directly on the app, which also offers an augmented reality module to preview luxury items right
+                  in the home.</dd>
 
-                    <dd class="block font-light text-gray-500">By the time Artemest approached Netguru, they already had
-                      a working product. But
-                      with exponential growth, it needed a renovation.</dd>
+                <dd class="block font-light text-gray-500">By the time Artemest approached Netguru, they already had
+                  a working product. But
+                  with exponential growth, it needed a renovation.</dd>
 
-                    <dd class="block font-light text-gray-500">Netguru delivered comprehensive product management and a
-                      full-stack solution — a
-                      complete product review, UX design, and native mobile development to reflect the extraordinary
-                      craft of Artemest’s vendors.</dd>
-                  </div>
-                  <div class="flex justify-start items-start">
-                    <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-2 gap-x-2">Read
-                      Case Study <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
-                        fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 18l6-6-6-6" />
-                      </svg></p>
-                  </div>
-                </dl>
+                <dd class="block font-light text-gray-500">Netguru delivered comprehensive product management and a
+                  full-stack solution — a
+                  complete product review, UX design, and native mobile development to reflect the extraordinary
+                  craft of Artemest’s vendors.</dd>
               </div>
-            </div>
-            <div class="flex items-start justify-end lg:order-first w-full">
-              <img
-                src="https://www.netguru.com/hs-fs/hubfs/Artemest_native_app.jpg?width=867&height=740&name=Artemest_native_app.jpg"
-                alt="Product screenshot" class="h-[39rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 w-full">
-            </div>
+              <div class="flex justify-start items-start">
+                <p class="border-b border-gray-500 font-semibold flex items-center cursor-pointer pb-1.5 gap-x-2">Read
+                  the
+                  case study <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
+                    fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg></p>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
-
     </section>
-
     <section class="bg-gray-100">
       <div class="relative isolate overflow-hidden bg-gray-100 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div
@@ -704,7 +701,8 @@
             class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
               <div class="lg:max-w-lg">
-                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Enabling digital
+                <h1 class="mt-2 text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Enabling
+                  digital
                   transformation <span class="text-blue-500">in the real estate industry</span>
                 </h1>
                 <p class="mt-3 text-base font-semibold leading-8 text-gray-700">Netguru and Keller Williams came
@@ -716,7 +714,7 @@
           </div>
           <div
             class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="h-[39rem] w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 w-full object-cover"
+            <img class="rounded-xl"
               src="https://www.netguru.com/hs-fs/hubfs/KW_product_management.jpeg?width=1057&height=740&name=KW_product_management.jpeg"
               alt="">
           </div>
@@ -737,8 +735,9 @@
                   successful. One of KW’s signature products is Kelle, dubbed the “Siri for the real estate industry”.
                 </p>
                 <div class="flex justify-start items-start">
-                  <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-2 gap-x-2">Read
-                    Case Study <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
+                  <p class="border-b border-gray-500 font-semibold flex items-center cursor-pointer pb-1.5 gap-x-2">Read
+                    the
+                    case study <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
                       fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M9 18l6-6-6-6" />
                     </svg></p>
@@ -750,56 +749,54 @@
       </div>
 
     </section>
-    <section class="bg-gray-100">
-      <div class="overflow-hidden bg-gray-100 py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div
-            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div class="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div class="lg:max-w-lg">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">Shopping made personal with
-                  <span class="text-blue-500">the IKEA personal assistant experience concept</span>
-                </p>
-                <p class="mt-6 text-lg leading-8 text-gray-900 font-medium">How Netguru developed a personal assistant
-                  concept to
-                  transform IKEA’s online shopping experience</p>
-                <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  <div class="relative space-y-6">
-                    <dd class="block font-light text-gray-500 text-sm leading-loose">IKEA reinvented the furniture
-                      shopping experience by making it more personal to
-                      their customers. In order to translate the uniquely physical experience of shopping in IKEA,
-                      Netguru’s product management team designed a concept for an online personal assistant to help
-                      customers move through the product catalog more seamlessly.</dd>
+    <section class="bg-gray-100 pt-10">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 p-6 lg:p-0 max-w-screen-2xl mx-auto">
+        <div class="rounded-lg bg-gray-200 h-full">
+          <img class="rounded-lg h-full"
+            src="https://www.netguru.com/hs-fs/hubfs/IKEA_concept-1.jpeg?width=1776&height=740&name=IKEA_concept-1.jpeg"
+            alt="">
+        </div>
+        <div class="lg:pl-10">
+          <div class="lg:max-w-lg">
+            <p class="mt-2 text-xl font-bold tracking-tight text-gray-900 sm:text-4xl">Shopping made personal with<span
+                class="text-blue-500"> the IKEA personal assistant experience concept</span></p>
+            <p class="mt-6 text-lg leading-8 text-gray-900 text-sm font-semibold">How Netguru developed a personal
+              assistant
+              concept to transform IKEA’s online shopping experience</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <div class="relative space-y-6">
+                <dd class="block font-light text-gray-500">IKEA reinvented the furniture shopping experience by making
+                  it more personal to their customers. In order to translate the uniquely physical experience of
+                  shopping in IKEA, Netguru’s product management team designed a concept for an online personal
+                  assistant to help customers move through the product catalog more seamlessly.</dd>
 
-                    <dd class="block font-light text-gray-500 text-sm leading-loose">To do this, we ran research
-                      interviews, conducted brainstorming sessions, ran test
-                      scenarios, and created the visual design, running the entire product management process.
-                    </dd>
-                  </div>
-                  <div class="flex justify-start items-start">
-                    <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-2 gap-x-2">Read
-                      Case Study <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
-                        fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 18l6-6-6-6" />
-                      </svg></p>
-                  </div>
-                </dl>
+                <dd class="block font-light text-gray-500">To do this, we ran research interviews, conducted
+                  brainstorming sessions, ran test scenarios, and created the visual design, running the entire product
+                  management process.</dd>
+
+                <!-- <dd class="block font-light text-gray-500">Netguru delivered comprehensive product management and a
+                  full-stack solution — a
+                  complete product review, UX design, and native mobile development to reflect the extraordinary
+                  craft of Artemest’s vendors.</dd> -->
               </div>
-            </div>
-            <div class="flex items-start justify-end lg:order-first">
-              <img
-                src="https://www.netguru.com/hs-fs/hubfs/IKEA_concept-1.jpeg?width=1776&height=740&name=IKEA_concept-1.jpeg"
-                alt="Product screenshot"
-                class="h-[39rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 w-full object-cover">
-            </div>
+              <div class="flex justify-start items-start">
+                <p class="border-b border-gray-500 font-semibold flex items-center cursor-pointer pb-1.5 gap-x-2">Read
+                  the
+                  case study <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24"
+                    fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg></p>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
-
     </section>
+
     <section class="bg-gray-100 py-24 sm:py-32 space-y-10">
       <div class="flex justify-center items-center">
-        <h2 class="text-center max-w-md text-3xl text-gray-900 font-semibold leading-relaxed">See how our support helped
+        <h2 class="text-center max-w-md text-xl lg:text-2xl text-gray-900 font-semibold leading-relaxed">See how our
+          support helped
           <span class="text-blue-600">those companies</span>
         </h2>
       </div>
@@ -920,56 +917,7 @@
                     solarisBank, PAYBACK, DAMAC, Volkswagen, Babbel, Santander, Keller Williams, and Hive.</p>
                 </div>
               </div>
-              <div class="flex justify-center items-center">
-                <div class="flex justify-center items-center gap-x-3">
-                  <!-- <button
-                    class="px-4 py-2 bg-gray-200 disabled:bg-gray-400"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
-                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M19 12H6M12 5l-7 7 7 7" />
-                  </svg>
-                  <!-- </button> -->
-                  <!-- <button
-                    class="px-4 py-2 bg-gray-200 disabled:bg-gray-400"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
-                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h13M12 5l7 7-7 7" />
-                  </svg>
-                  <!-- </button> -->
-                </div>
-              </div>
-              <div class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3">
-                <div class="text-center sm:flex sm:text-left lg:block lg:text-center">
-                  <div class="sm:flex-shrink-0">
-                  </div>
-                  <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                    <h3 class="text-lg font-medium text-gray-900">Data-driven SME lending platform provider</h3>
-                    <h1 class="text-blue-600 text-2xl">$20M</h1>
-                    <p class="mt-2 text-sm text-gray-500">Granted in funding</p>
-                  </div>
-                </div>
-                <div class="text-center sm:flex sm:text-left lg:block lg:text-center">
-                  <div class="sm:flex-shrink-0">
-                  </div>
-                  <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                    <h3 class="text-lg font-medium text-gray-900">Investment platform that enable to invest in private
-                      equity funds</h3>
-                    <h1 class="text-blue-600 text-2xl">$28M</h1>
-                    <p class="mt-2 text-sm text-gray-500">Granted in funding</p>
-                  </div>
-                </div>
-                <div class="text-center sm:flex sm:text-left lg:block lg:text-center">
-                  <div class="sm:flex-shrink-0">
-                  </div>
-                  <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                    <h3 class="text-lg font-medium text-gray-900">Self-care mobile app that lets users practice
-                      gratitude
-                    </h3>
-                    <h1 class="text-blue-600 text-2xl">$5M</h1>
-                    <p class="mt-2 text-sm text-gray-500">Granted in funding</p>
-                  </div>
-                </div>
-              </div>
+              <DeliveryCarousel />
             </div>
           </div>
         </div>
@@ -993,73 +941,11 @@
                   </svg></p>
               </div>
             </div>
-            <div class="lg:col-span-7 lg:mt-0">
-              <div class="bg-white">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8 space-y-10 pt-10 pb-10">
-                  <div v-for="item in faqs" :key="item.id" class="overflow-hidden border-b pb-10">
-                    <button
-                      class="w-full text-left py-2 transition-colors duration-300 flex justify-between items-center"
-                      @click="toggle(item.id)">
-                      <p class="text-gray-800 font-medium text-xl">
-                        {{ item.question }}
-                      </p>
-                      <span class="relative h-5 w-5 shrink-0">
-                        <svg v-if="isClose(item.id)" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                        </svg>
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                        </svg>
-                        <svg v-if="isOpen(item.id)" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                          viewBox="0 0 24 24" fill="none" stroke="#4a4a4a" stroke-width="2.5" stroke-linecap="round"
-                          stroke-linejoin="round">
-                          <line x1="5" y1="12" x2="19" y2="12" />
-                        </svg>
-                      </span>
-                    </button>
-                    <div v-if="isOpen(item.id)" class="overflow-hidden transition-max-height duration-500"
-                      :style="{ maxHeight: isOpen(item.id) ? `${maxHeight}px` : '0' }">
-                      <p class="p-1 lg:p-4 py-6 text-gray-600 font-light text-sm leading-loose rounded-lg">
-                        {{ item.answer }}
-                      </p>
-                    </div>
-                  </div>
-                  <!-- <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-                    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions
-                    </h2>
-                    <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-                      <div class="pt-6">
-                        <dt>
-                          <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
-                            aria-controls="faq-0" aria-expanded="false">
-                            <span class="text-base font-semibold leading-7">What&#039;s the best thing about
-                              Switzerland?</span>
-                            <span class="ml-6 flex h-7 items-center">
-                              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                              </svg>
-                              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                              </svg>
-                            </span>
-                          </button>
-                        </dt>
-                        <dd class="mt-2 pr-12" id="faq-0">
-                          <p class="text-base leading-7 text-gray-600">I don&#039;t know, but the flag is a big plus.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                          </p>
-                        </dd>
-                      </div>
-                    </dl>
-                  </div> -->
-                </div>
+            <section class="lg:col-span-7 lg:mt-0">
+              <div class="mx-auto max-w-7xl px-6 lg:px-8 space-y-10 pb-10">
+                <FaqSection />
               </div>
-
-            </div>
+            </section>
           </div>
         </div>
       </div>
@@ -1072,71 +958,14 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Read more on <span
                 class="text-blue-600">our Blog</span></h2>
             <div class="flex justify-center items-center">
-              <p class="mt-2 text-lg leading-8 text-gray-600 max-w-md text-center">Check out the knowledge base
+              <p class="mt-2 text-sm font-light leading-8 text-gray-600 max-w-md text-center">Check out the knowledge
+                base
                 collected
                 and distilled by
                 experienced professionals.</p>
             </div>
           </div>
-          <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <article class="flex flex-col items-start justify-between">
-              <div class="relative w-full">
-                <img
-                  src="https://www.netguru.com/hs-fs/hubfs/Lina%20Pas%C5%82awska%20Disrupion%20Insights%20Blog%20header.jpg?width=384&height=202&name=Lina%20Pas%C5%82awska%20Disrupion%20Insights%20Blog%20header.jpg"
-                  alt=""
-                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-              </div>
-              <div class="max-w-xl">
-                <div class="group relative">
-                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
-                      <span class="absolute inset-0"></span>
-                      Disruption Insights: Be an Ambassador of Your Product
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </article>
-            <article class="flex flex-col items-start justify-between">
-              <div class="relative w-full">
-                <img
-                  src="https://www.netguru.com/hs-fs/hubfs/service_design-2.jpeg?width=384&height=202&name=service_design-2.jpeg"
-                  alt=""
-                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-              </div>
-              <div class="max-w-xl">
-                <div class="group relative">
-                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
-                      <span class="absolute inset-0"></span>
-                      Anti-patterns: 8 Things Not to Do in Your Quest to Build a Great Product
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </article>
-            <article class="flex flex-col items-start justify-between">
-              <div class="relative w-full">
-                <img
-                  src="https://www.netguru.com/hs-fs/hubfs/social-suggested-images/www.netguru.comhs-fshubfs_N19%20ModulesPhotosOffice%20LifeDSC_8422%20_HD.jpg?width=384&height=202&name=www.netguru.comhs-fshubfs_N19%20ModulesPhotosOffice%20LifeDSC_8422%20_HD.jpg"
-                  alt=""
-                  class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-              </div>
-              <div class="max-w-xl">
-                <div class="group relative">
-                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
-                      <span class="absolute inset-0"></span>
-                      Create an Event Where People Take Ownership, Self-Organize, and Solve Real Business Problems
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </article>
-          </div>
+          <BlogCarousel />
         </div>
       </div>
 
@@ -1209,7 +1038,8 @@
       <div class="flex justify-center items-center flex-col gap-y-3">
         <h1 class="text-4xl text-center max-w-md font-semibold">Looking for <span class="text-blue-600">other
             services?</span></h1>
-        <p class="font-light text-gray-400 max-w-md">Check out the other services that we have in our range. We deliver
+        <p class="font-light text-gray-400 max-w-md text-center">Check out the other services that we have in our range.
+          We deliver
           high-quality products on time. Hassle-free.
         </p>
       </div>
@@ -1465,7 +1295,7 @@
       </section>
     </section>
 
-    <section class='p-10 lg:p-0 flex justify-between items-center max-w-7xl mx-auto py-10'>
+    <section class='p-10 flex justify-between items-center max-w-7xl mx-auto py-10'>
       <p class="text-xs font-light text-gray-400">©2024 Netguru S.A. All rights reserved.</p>
       <div class="flex items-center text-xs font-light text-gray-400">
         <a href="#" class="text-xs font-light text-gray-400">Privacy Policy</a>
@@ -1476,130 +1306,28 @@
   </main>
 </template>
 
-
 <script>
+import BlogCarousel from '~/components/BlogCarousel.vue'
+import FaqSection from '@/components/FaqSection.vue'
 export default {
+  components: {
+    BlogCarousel,
+    FaqSection
+  },
   data() {
     return {
-      //Delovery carousel
       isSideNavOpen: false,
-      delivery_currentIndex: 0,
-      delivery_itemsPerPage: 3,
-      delivery_items: [
-        { id: 1, amount: '$47M', name: `Lead generation tool that helps travelers to make bookings` },
-        { id: 2, amount: '$47M', name: `Data-driven SME lending platform provider` },
-        { id: 3, amount: '$47M', name: `Investment platform that enable to invest in private equity funds` },
-        { id: 4, amount: '$20M', name: `Data-driven SME lending platform provider` },
-        { id: 5, amount: '$28M', name: `Investment platform that enable to invest in private equity funds` },
-        { id: 6, amount: '$5M', name: `Self-care mobile app that lets users practice gratitude` }
-      ],
-
-
-      showPublicationsDropdown: false,
-      openId: null,
-      maxHeight: 0, // You might need to adjust this based on your content
-      isSidebarOpen: false,
-      currentSlide: 0,
-      interval: null,
-      faqs: [
-        {
-          id: 1, question: 'Why are Product Managers important?', answer: `Product Managers are a guiding hand for your team. They are responsible for assisting in building products that surpass business objectives and solve customer needs. In summary, they maximize success at every step of the product's life-cycle by managing a team's timeline and quality of work, allowing the team to reach a potential that they never thought possible.`
-        },
-        {
-          id: 2, question: 'What is the difference between a Product Manager and a Project Manager?', answer: 'A Product Manager is someone who discovers what users need and prioritizes what to build next, rallying the team around a product roadmap. In contrast, a Project Owner is responsible for internal processes, procedural work, timeline, and budgeting.'
-        },
-        {
-          id: 3,
-          question: `What is Agile Product Management?
-`,
-          answer: 'Agile Product Management is essentially how it sounds. It encourages an adaptive approach to product planning and implementation by quickly responding to feedback. This information helps to build products that customers want and need.'
-        },
-        {
-          id: 4,
-          question: `Is Product Management something for your business?
-`,
-          answer: 'Much depends on the type of your organization, your product, your current needs, problems, requirements, and the product knowledge, skills, and resources that you need. Schedule a commitment-free meeting with us and let us look at your business with our product eyes.'
-        },
-        {
-          id: 5,
-          question: `Why is strategy planning important to your business?
-`,
-          answer: 'Strategy planning is a key to success — finding a way to reach for the top, then executing the plan and measuring results. Apart from formulating a strategy, a product expert also coordinates its execution with relevant teams. Setting and measuring objectives and key results helps to effectively drive growth.'
-        }
-      ]
     }
   },
-  // computed: {
-  //   maxIndex() {
-  //     return Math.ceil(this.items.length / this.itemsPerPage) - 1;
-  //   }
-  // },
-  mounted() {
-    this.startAutoCycle()
-  },
-  beforeDestroy() {
-    this.stopAutoCycle()
-  },
-  methods: {
-    // move(step) {
-    //   this.currentIndex = Math.max(0, Math.min(this.currentIndex + step, this.maxIndex));
-    // },
-    toggle(id) {
-      this.openId = this.openId === id ? null : id
-      // Adjust maxHeight to fit your content or calculate dynamically
-      this.maxHeight = this.openId ? 200 : 0 // Example static height
-    },
-    isOpen(id) {
-      return this.openId === id
-    },
-    isClose(id) {
-      return this.openId !== id
-    },
-    togglePublicationsDropdown() {
-      this.showPublicationsDropdown = !this.showPublicationsDropdown
-    },
-    handleRouting(routePath) {
-      this.$router.push(routePath)
-      this.showPublicationsDropdown = false
-    },
-    handleItemSelected(item) {
-      this.$router.push(item.value)
-    },
-    beforeEnter(el) {
-      el.style.transform = 'translateX(100%)'
-    },
-    enter(el, done) {
-      el.getBoundingClientRect() // Trigger reflow
-      el.style.transition = 'transform 0.5s ease-in-out'
-      el.style.transform = 'translateX(0)'
-      done()
-    },
-    leave(el, done) {
-      el.style.transform = 'translateX(-100%)'
-      done()
-    },
-    nextSlide() {
-      this.currentSlide = (this.currentSlide + 1) % this.slides.length
-    },
-    prevSlide() {
-      this.currentSlide =
-        (this.currentSlide - 1 + this.slides.length) % this.slides.length
-    },
-    startAutoCycle() {
-      this.interval = setInterval(this.nextSlide, 3000) // Cycle every 3 seconds
-    },
-    stopAutoCycle() {
-      clearInterval(this.interval)
-    },
-    toggleSidebar() {
-      this.isSidebarOpen = !this.isSidebarOpen
-    }
-  }
 }
 </script>
 
-<style>
-.slide-move {
-  transition: transform 0.5s ease;
+<style scoped>
+button {
+  visibility: hidden;
+}
+
+button:hover {
+  visibility: visible;
 }
 </style>
