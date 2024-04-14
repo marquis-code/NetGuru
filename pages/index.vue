@@ -1,9 +1,9 @@
 <template>
   <main>
-    <div class="bg-gray-900">
-      <header class="absolute inset-x-0 top-0 z-50">
-        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1">
+    <header class="bg-[#807f7d]">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
               <svg class="netguru-logo__icon" width="130" height="25" viewBox="0 0 322 62" version="1.1"
@@ -47,139 +47,176 @@
               </svg>
             </a>
           </div>
-          <div class="flex lg:hidden">
-            <button @click="isSideNavOpen = true" type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-50 bg-black">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+          <div class="hidden md:block">
+            <nav aria-label="Global">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
+                </li>
+
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Industries </a>
+                </li>
+
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Clients </a>
+                </li>
+
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About us </a>
+                </li>
+
+                <li>
+                  <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Insights </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <button @click="isSideNavOpen = true" type="button"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-50 bg-black">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg> Open here
+              </button>
+
+              <div class="hidden sm:flex">
+                <a href="#"
+                  class="text-sm font-semibold leading-6 text-white py-2.5 rounded-lg border px-6 border-white">Estimate
+                  project</a>
+              </div>
+            </div>
+
+            <div class="block md:hidden">
+              <svg @click="isSideNavOpen = true" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" width="23"
+                height="23" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
                 <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg> Open here
-            </button>
-          </div>
-
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Services</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Industries</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Clients</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">About us</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">Insights</a>
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#"
-              class="text-sm font-semibold leading-6 text-white py-2.5 rounded-lg border px-6 border-white">Estimate
-              project</a>
-          </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true" v-if="isSideNavOpen">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50"></div>
-          <div
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt=""> -->
-                <svg class="netguru-logo__icon" width="130" height="25" viewBox="0 0 322 62" version="1.1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>Netguru logo</title>
-
-                  <g>
-                    <path
-                      d="M4.35,62.31 C3.45887259,62.31 2.60424345,61.956001 1.97412122,61.3258788 C1.34399898,60.6957566 0.99,59.8411274 0.99,58.95 L0.99,4.35 C0.994728698,2.99465389 1.81330603,1.77485725 3.06575614,1.25682815 C4.31820625,0.738799044 5.75926243,1.02398287 6.72,1.98 L26.72,21.98 C27.6455511,22.8099887 28.0371768,24.0831992 27.7380819,25.2898758 C27.4389869,26.4965523 26.4980576,27.4394668 25.292014,27.7411041 C24.0859704,28.0427414 22.8119375,27.6537999 21.98,26.73 L7.71,12.47 L7.71,58.97 C7.70735179,59.8584765 7.3518641,60.7095108 6.72174101,61.3358832 C6.09161792,61.9622555 5.23847644,62.3126561 4.35,62.31 Z"
-                      fill="#00d563"></path>
-                    <path
-                      d="M58.96,62.31 C58.0684021,62.3053391 57.2154457,61.9454418 56.59,61.31 L36.59,41.31 C35.2810853,40.0010851 35.2810854,37.8789149 36.5900001,36.5700001 C37.8989149,35.2610854 40.0210851,35.2610853 41.33,36.57 L55.6,50.83 L55.6,4.33 C55.6,2.47708466 57.1020847,0.975 58.955,0.975 C60.8079153,0.975 62.31,2.47708466 62.31,4.33 L62.31,58.93 C62.3153186,59.8228572 61.9650415,60.6811145 61.3365055,61.3152791 C60.7079696,61.9494438 59.8528691,62.3073585 58.96,62.31 Z"
-                      fill="#00d563"></path>
-                  </g>
-
-
-                  <g class="netguru-logo__type">
-                    <path
-                      d="M121.47,27.75 L121.47,47.02 L114.75,47.02 L114.75,29.95 C114.75,24.8 112.09,21.95 107.61,21.95 C103.29,21.95 99.67,24.8 99.67,30.05 L99.67,47.05 L92.95,47.05 L92.95,16.53 C92.9540704,16.0154436 93.2658756,15.5533496 93.7415085,15.3569873 C94.2171415,15.1606251 94.7641208,15.2681751 95.13,15.63 L99.6,20.1 L99.6,20.1 C101.757301,17.0810885 105.304386,15.3697425 109.01,15.56 C116.3,15.56 121.47,20.58 121.47,27.75 Z"
-                      fill="currentColor"></path>
-                    <path
-                      d="M157.91,31.65 C157.91,32.51 157.85,33.38 157.78,34.15 L135.13,34.15 C136.03,39.65 139.9,41.96 144.25,41.96 C147.478614,41.8892936 150.593394,40.7537698 153.11,38.73 L156.44,43.5 C152.920922,46.4594092 148.424527,47.9998078 143.83,47.82 C134.65,47.82 128.15,41.42 128.15,31.69 C128.15,21.96 134.39,15.56 143.41,15.56 C151.99,15.56 157.88,22.08 157.91,31.65 Z M135.16,29.02 L151.06,29.02 C150.32,24.25 147.54,21.47 143.28,21.47 C138.52,21.51 135.86,24.58 135.16,29.02 Z"
-                      fill="currentColor"></path>
-                    <path
-                      d="M185.49,22.44 L173.74,22.44 L173.74,35.78 C173.74,39.91 175.92,41.51 178.6,41.51 C180.809896,41.3867482 182.945305,40.6680345 184.78,39.43 L187.44,44.77 C184.681502,46.7038743 181.398798,47.7504325 178.03,47.77 C171.09,47.77 167.03,44.03 167.03,35.87 L167.03,22.44 L160.92,22.44 L160.92,16.36 L167.03,16.36 L167.03,7.08 L173.75,7.08 L173.75,16.36 L185.49,16.36 L185.49,22.44 L185.49,22.44 Z"
-                      fill="currentColor"></path>
-                    <path
-                      d="M214.57,20.02 L214.57,16.34 L221.3,16.34 L221.3,44.85 C221.3,54.48 215.09,60.4 204.85,60.4 C200.28,60.4 195.25,59.15 192.02,56.85 L194.45,51.19 C197.566866,53.1573332 201.164674,54.2297568 204.85,54.29 C211.12,54.29 214.58,50.83 214.58,45.14 L214.58,42.68 C212.28,45.62 208.82,47.16 204.37,47.16 C197.37,47.16 190.16,41.27 190.16,31.35 C190.16,21.43 197.36,15.54 204.37,15.54 C208.81,15.56 212.3,17.12 214.57,20.02 Z M197.03,31.35 C197.03,36.5 200.42,40.85 206.08,40.85 C211.49,40.85 215.13,36.72 215.13,31.35 C215.13,25.98 211.48,21.85 206.08,21.85 C200.42,21.86 197.03,26.18 197.03,31.36 L197.03,31.35 Z"
-                      fill="currentColor"></path>
-                    <path
-                      d="M288.14,16.42 L286.54,23.04 C284.946613,22.2960953 283.208475,21.9136367 281.45,21.92 C277.19,21.92 274.16,24.92 274.16,30.14 L274.16,47.02 L267.47,47.02 L267.47,16.36 L274.09,16.36 L274.09,19.82 C276.09,16.91 279.24,15.56 282.98,15.56 C284.739831,15.5043652 286.493339,15.7966165 288.14,16.42 L288.14,16.42 Z"
-                      fill="currentColor"></path>
-                    <path
-                      d="M230.07,35.62 L230.07,16.35 L236.79,16.35 L236.79,33.41 C236.79,38.56 239.45,41.41 243.93,41.41 C248.25,41.41 251.87,38.56 251.87,33.31 L251.87,16.31 L258.59,16.31 L258.59,46.79 C258.58593,47.3045564 258.274124,47.7666504 257.798491,47.9630127 C257.322858,48.1593749 256.775879,48.0518249 256.41,47.69 L251.94,43.22 L251.94,43.22 C249.782699,46.2389115 246.235614,47.9502575 242.53,47.76 C235.23,47.81 230.07,42.79 230.07,35.62 Z"
-                      fill="currentColor"></path>
-                    <path
-                      d="M292.98,35.62 L292.98,16.35 L299.7,16.35 L299.7,33.41 C299.7,38.56 302.36,41.41 306.84,41.41 C311.16,41.41 314.77,38.56 314.77,33.31 L314.77,16.31 L321.49,16.31 L321.49,46.79 C321.48593,47.3045564 321.174124,47.7666504 320.698491,47.9630127 C320.222858,48.1593749 319.675879,48.0518249 319.31,47.69 L314.84,43.22 L314.84,43.22 C312.682699,46.2389115 309.135614,47.9502575 305.43,47.76 C298.13,47.81 292.98,42.79 292.98,35.62 Z"
-                      fill="currentColor"></path>
-                  </g>
-
-                </svg>
-              </a>
-              <button @click="isSideNavOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
-                <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+              </svg>
             </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 relative  h-screen">
-                <div class="space-y-2 py-6">
-                  <a href="#" @click.native="isSideNavOpen = false"
-                    class="-mx-3 flex border-b border-gray-300 pb-2 justify-between items-center block px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Services
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h13M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                  <a href="#" @click.native="isSideNavOpen = false"
-                    class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Industries
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h13M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                  <a href="#" @click.native="isSideNavOpen = false"
-                    class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Clients
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h13M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                  <a href="#" @click.native="isSideNavOpen = false"
-                    class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">About
-                    us
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h13M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                  <a href="#" @click.native="isSideNavOpen = false"
-                    class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Insights
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h13M12 5l7 7-7 7" />
-                    </svg>
-                  </a>
-                </div>
-                <div class="py-6 absolute bottom-6 mb-6 w-full flex justify-center items-center">
-                  <a href="#" @click.native="isSideNavOpen = false"
-                    class="-mx-3 bg-blue-500 text-white block text-xs rounded-lg px-6 py-2 font-semibold leading-7">Estimate
-                    project</a>
-                </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bg-gray-900 z-50">
+      <div class="lg:hidden" role="dialog" aria-modal="true" v-if="isSideNavOpen">
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <svg class="netguru-logo__icon" width="130" height="25" viewBox="0 0 322 62" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Netguru logo</title>
+
+                <g>
+                  <path
+                    d="M4.35,62.31 C3.45887259,62.31 2.60424345,61.956001 1.97412122,61.3258788 C1.34399898,60.6957566 0.99,59.8411274 0.99,58.95 L0.99,4.35 C0.994728698,2.99465389 1.81330603,1.77485725 3.06575614,1.25682815 C4.31820625,0.738799044 5.75926243,1.02398287 6.72,1.98 L26.72,21.98 C27.6455511,22.8099887 28.0371768,24.0831992 27.7380819,25.2898758 C27.4389869,26.4965523 26.4980576,27.4394668 25.292014,27.7411041 C24.0859704,28.0427414 22.8119375,27.6537999 21.98,26.73 L7.71,12.47 L7.71,58.97 C7.70735179,59.8584765 7.3518641,60.7095108 6.72174101,61.3358832 C6.09161792,61.9622555 5.23847644,62.3126561 4.35,62.31 Z"
+                    fill="#00d563"></path>
+                  <path
+                    d="M58.96,62.31 C58.0684021,62.3053391 57.2154457,61.9454418 56.59,61.31 L36.59,41.31 C35.2810853,40.0010851 35.2810854,37.8789149 36.5900001,36.5700001 C37.8989149,35.2610854 40.0210851,35.2610853 41.33,36.57 L55.6,50.83 L55.6,4.33 C55.6,2.47708466 57.1020847,0.975 58.955,0.975 C60.8079153,0.975 62.31,2.47708466 62.31,4.33 L62.31,58.93 C62.3153186,59.8228572 61.9650415,60.6811145 61.3365055,61.3152791 C60.7079696,61.9494438 59.8528691,62.3073585 58.96,62.31 Z"
+                    fill="#00d563"></path>
+                </g>
+
+
+                <g class="netguru-logo__type">
+                  <path
+                    d="M121.47,27.75 L121.47,47.02 L114.75,47.02 L114.75,29.95 C114.75,24.8 112.09,21.95 107.61,21.95 C103.29,21.95 99.67,24.8 99.67,30.05 L99.67,47.05 L92.95,47.05 L92.95,16.53 C92.9540704,16.0154436 93.2658756,15.5533496 93.7415085,15.3569873 C94.2171415,15.1606251 94.7641208,15.2681751 95.13,15.63 L99.6,20.1 L99.6,20.1 C101.757301,17.0810885 105.304386,15.3697425 109.01,15.56 C116.3,15.56 121.47,20.58 121.47,27.75 Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M157.91,31.65 C157.91,32.51 157.85,33.38 157.78,34.15 L135.13,34.15 C136.03,39.65 139.9,41.96 144.25,41.96 C147.478614,41.8892936 150.593394,40.7537698 153.11,38.73 L156.44,43.5 C152.920922,46.4594092 148.424527,47.9998078 143.83,47.82 C134.65,47.82 128.15,41.42 128.15,31.69 C128.15,21.96 134.39,15.56 143.41,15.56 C151.99,15.56 157.88,22.08 157.91,31.65 Z M135.16,29.02 L151.06,29.02 C150.32,24.25 147.54,21.47 143.28,21.47 C138.52,21.51 135.86,24.58 135.16,29.02 Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M185.49,22.44 L173.74,22.44 L173.74,35.78 C173.74,39.91 175.92,41.51 178.6,41.51 C180.809896,41.3867482 182.945305,40.6680345 184.78,39.43 L187.44,44.77 C184.681502,46.7038743 181.398798,47.7504325 178.03,47.77 C171.09,47.77 167.03,44.03 167.03,35.87 L167.03,22.44 L160.92,22.44 L160.92,16.36 L167.03,16.36 L167.03,7.08 L173.75,7.08 L173.75,16.36 L185.49,16.36 L185.49,22.44 L185.49,22.44 Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M214.57,20.02 L214.57,16.34 L221.3,16.34 L221.3,44.85 C221.3,54.48 215.09,60.4 204.85,60.4 C200.28,60.4 195.25,59.15 192.02,56.85 L194.45,51.19 C197.566866,53.1573332 201.164674,54.2297568 204.85,54.29 C211.12,54.29 214.58,50.83 214.58,45.14 L214.58,42.68 C212.28,45.62 208.82,47.16 204.37,47.16 C197.37,47.16 190.16,41.27 190.16,31.35 C190.16,21.43 197.36,15.54 204.37,15.54 C208.81,15.56 212.3,17.12 214.57,20.02 Z M197.03,31.35 C197.03,36.5 200.42,40.85 206.08,40.85 C211.49,40.85 215.13,36.72 215.13,31.35 C215.13,25.98 211.48,21.85 206.08,21.85 C200.42,21.86 197.03,26.18 197.03,31.36 L197.03,31.35 Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M288.14,16.42 L286.54,23.04 C284.946613,22.2960953 283.208475,21.9136367 281.45,21.92 C277.19,21.92 274.16,24.92 274.16,30.14 L274.16,47.02 L267.47,47.02 L267.47,16.36 L274.09,16.36 L274.09,19.82 C276.09,16.91 279.24,15.56 282.98,15.56 C284.739831,15.5043652 286.493339,15.7966165 288.14,16.42 L288.14,16.42 Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M230.07,35.62 L230.07,16.35 L236.79,16.35 L236.79,33.41 C236.79,38.56 239.45,41.41 243.93,41.41 C248.25,41.41 251.87,38.56 251.87,33.31 L251.87,16.31 L258.59,16.31 L258.59,46.79 C258.58593,47.3045564 258.274124,47.7666504 257.798491,47.9630127 C257.322858,48.1593749 256.775879,48.0518249 256.41,47.69 L251.94,43.22 L251.94,43.22 C249.782699,46.2389115 246.235614,47.9502575 242.53,47.76 C235.23,47.81 230.07,42.79 230.07,35.62 Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M292.98,35.62 L292.98,16.35 L299.7,16.35 L299.7,33.41 C299.7,38.56 302.36,41.41 306.84,41.41 C311.16,41.41 314.77,38.56 314.77,33.31 L314.77,16.31 L321.49,16.31 L321.49,46.79 C321.48593,47.3045564 321.174124,47.7666504 320.698491,47.9630127 C320.222858,48.1593749 319.675879,48.0518249 319.31,47.69 L314.84,43.22 L314.84,43.22 C312.682699,46.2389115 309.135614,47.9502575 305.43,47.76 C298.13,47.81 292.98,42.79 292.98,35.62 Z"
+                    fill="currentColor"></path>
+                </g>
+
+              </svg>
+            </a>
+            <!-- <button @click="isSideNavOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button> -->
+            <svg @click="isSideNavOpen = false" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+              viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 relative  h-screen">
+              <div class="space-y-2 py-6">
+                <a href="#" @click.native="isSideNavOpen = false"
+                  class="-mx-3 flex border-b border-gray-300 pb-2 justify-between items-center block px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Services
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h13M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#" @click.native="isSideNavOpen = false"
+                  class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Industries
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h13M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#" @click.native="isSideNavOpen = false"
+                  class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Clients
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h13M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#" @click.native="isSideNavOpen = false"
+                  class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">About
+                  us
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h13M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="#" @click.native="isSideNavOpen = false"
+                  class="-mx-3 block border-b border-gray-300 pb-2 flex justify-between items-center px-3 py-2 text-sm font-semibold leading-7 text-gray-800">Insights
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h13M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="py-6 absolute bottom-6 mb-6 w-full flex justify-center items-center">
+                <a href="#" @click.native="isSideNavOpen = false"
+                  class="-mx-3 bg-blue-500 text-white block text-xs rounded-lg px-6 py-2 font-semibold leading-7">Estimate
+                  project</a>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
 
       <div class="relative isolate overflow-hidden pt-14">
         <img src="@/assets/img/bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
@@ -208,7 +245,6 @@
         <a href="#work" class="text-sm font-light text-gray-400 py-2.5 px-6">Work with us</a>
       </div>
     </div>
-    <!-- <DeliveryCarousel /> -->
     <section id="overview"
       class="px-6 lg:px-0 lg:max-w-6xl mx-auto lg:flex space-y-6 lg:space-y-0 justify-between py-16 lg:py-32">
       <div class="">
@@ -327,7 +363,7 @@
               <div class="mt-0.5 text-gray-600">Chief Digital Officer at Artemest</div>
             </div>
           </figcaption>
-        </figure>o
+        </figure>
         <div class="flex justify-center items-center">
           <img src="https://www.netguru.com/hubfs/dotted-map-gray.png" class="absolute bottom-0" />
         </div>
@@ -338,7 +374,7 @@
         <div class="lg:flex space-y-10 lg:space-y-0 p-6 lg:p-0 max-w-7xl mx-auto gap-x-10">
           <div class="space-y-6 flex justify-center items-center flex-col lg:justify-start lg:items-start">
             <h2
-              class="text-xl font-bold tracking-tight text-gray-900 sm:text-lg max-w-md lg:max-w-sm text-center lg:text-start">
+              class="text-xl font-bold tracking-tight text-gray-900 sm:text-xl max-w-md lg:max-w-sm text-center lg:text-start">
               Develop your product with
               the help
               of <span class="text-blue-500 text-w">experienced Product Managers</span></h2>
@@ -749,7 +785,7 @@
       </div>
 
     </section>
-    <section class="bg-gray-100 pt-10">
+    <section class="bg-gray-100 lg:pt-10">
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 p-6 lg:p-0 max-w-screen-2xl mx-auto">
         <div class="rounded-lg bg-gray-200 h-full">
           <img class="rounded-lg h-full"
@@ -926,9 +962,9 @@
     </section>
     <section>
       <div class="bg-white">
-        <div class="mx-auto max-w-7xl px-6 ">
+        <div class="mx-auto max-w-7xl px-3 lg:px-6 ">
           <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-            <div class="lg:col-span-5 space-y-6">
+            <div class="lg:col-span-5 space-y-6 px-3 lg:px-0">
               <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
               <p class="mt-4 text-base leading-7 text-gray-600">If you have any other questions, please get in touch
                 with our team.
@@ -942,7 +978,7 @@
               </div>
             </div>
             <section class="lg:col-span-7 lg:mt-0">
-              <div class="mx-auto max-w-7xl px-6 lg:px-8 space-y-10 pb-10">
+              <div class="mx-auto max-w-7xl lg:px-8 space-y-10 pb-10">
                 <FaqSection />
               </div>
             </section>
