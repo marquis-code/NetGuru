@@ -1,6 +1,6 @@
 <template>
   <main>
-    <header class="bg-[#807f7d]">
+    <header class="bg-[#807f7d] lg:hidden">
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
@@ -106,7 +106,23 @@
         </div>
       </div>
     </header>
-    <div class="bg-gray-900 z-50">
+    <section class="hidden lg:flex h-[700px]">
+      <div class="w-6/12 space-y-4 pt-56 p-10">
+        <h1 class="text-6xl font-black max-w-lg">It's time to grow your beauty business.</h1>
+        <p class="font-medium max-w-lg leading-relaxed">Relume Beauty is an all-in-one booking management platform that
+          instantly connects you to customers seeking beauty service in your area.</p>
+        <div class="text-white bg-black py-3 px-6 rounded w-2/12 text-center">Learn more</div>
+      </div>
+      <MarqueeSection class="w-6/12" />
+    </section>
+    <div class="space-y-4 p-6 lg:hidden pt-16">
+      <h1 class="text-4xl font-black max-w-lg">It's time to grow your beauty business.</h1>
+      <p class="font-medium max-w-lg text-sm leading-snug">Relume Beauty is an all-in-one booking management platform
+        that
+        instantly connects you to customers seeking beauty service in your area.</p>
+      <div class="text-white bg-black py-3 px-6 text-sm rounded lg:w-2/12 pt-4 text-center">Learn more</div>
+    </div>
+    <!-- <div class="bg-gray-900 z-50">
       <div class="lg:hidden" role="dialog" aria-modal="true" v-if="isSideNavOpen">
         <div class="fixed inset-0 z-50"></div>
         <div
@@ -154,13 +170,6 @@
 
               </svg>
             </a>
-            <!-- <button @click="isSideNavOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button> -->
             <svg @click="isSideNavOpen = false" xmlns="http://www.w3.org/2000/svg" width="23" height="23"
               viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
@@ -244,9 +253,9 @@
         <a href="#expertise" class="text-sm font-light text-gray-400 py-2.5 px-6">Expertise</a>
         <a href="#work" class="text-sm font-light text-gray-400 py-2.5 px-6">Work with us</a>
       </div>
-    </div>
+    </div> -->
     <section id="overview"
-      class="px-6 lg:px-0 lg:max-w-6xl mx-auto lg:flex space-y-6 lg:space-y-0 justify-between py-16 lg:py-32">
+      class="px-6 lg:px-0 lg:max-w-6xl mx-auto lg:flex space-y-6 lg:space-y-0 justify-between py-6 lg:py-32">
       <div class="">
         <h1 class="text-2xl lg:text-4xl font-semibold leading-relaxed max-w-lg"><span class="text-blue-500">95%
           </span>of new
@@ -1343,12 +1352,14 @@
 </template>
 
 <script>
+import MarqueeSection from '@/components/MarqueeSection.vue'
 import BlogCarousel from '~/components/BlogCarousel.vue'
 import FaqSection from '@/components/FaqSection.vue'
 export default {
   components: {
     BlogCarousel,
-    FaqSection
+    FaqSection,
+    MarqueeSection
   },
   data() {
     return {
