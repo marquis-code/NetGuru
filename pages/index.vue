@@ -107,10 +107,12 @@
       </div>
     </header>
     <section class="hidden lg:flex h-[700px]">
-      <div class="w-6/12 space-y-4 pt-56 p-10">
-        <h1 class="text-6xl font-black max-w-lg">It's time to grow your beauty business.</h1>
-        <p class="font-medium max-w-lg leading-relaxed">Relume Beauty is an all-in-one booking management platform that
-          instantly connects you to customers seeking beauty service in your area.</p>
+      <div class="w-6/12 space-y-4 pt-44 p-10">
+        <h1 class="text-6xl font-black max-w-lg leading-snug">Transform Your Digital Horizon with <span
+            class="text-blue-500">Buildr</span></h1>
+        <p class="font-medium max-w-lg leading-relaxed">Where Innovation Meets Execution! Experience the cutting-edge in
+          web and mobile application development, paired with bespoke software solutions that propel startups,
+          scale-ups, and enterprises into the future.</p>
         <div class="text-white bg-black py-3 px-6 rounded w-2/12 text-center">Learn more</div>
       </div>
       <MarqueeSection class="w-6/12" />
@@ -277,13 +279,11 @@
           <div class="flex justify-center items-center flex-col">
             <h2 class="lg:text-3xl font-medium tracking-tight text-gray-900 text-center max-w-sm text-xl">Why you should
               choose
-              product
-              management services
+              <span class='text-blue-500'>Buildr Software development services</span>
             </h2>
-            <p class="mt-4 text-gray-500 text-center max-w-sm font-thin text-sm">All-in-one - a product expert will
-              drive the development
-              of your
-              project</p>
+            <p class="mt-4 text-gray-800 text-center max-w-sm font-medium text-sm">We specialize in crafting custom web
+              and mobile applications tailored to the unique needs of startups, scale-ups, and established enterprises.
+            </p>
           </div>
         </div>
         <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">
@@ -293,44 +293,36 @@
                 <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Real-estate.svg" alt=""
                   class="h-7 rounded-full w-auto absolute">
               </div>
-              <h3 class="mt-6 text-sm font-semibold text-gray-900">Build the right thing</h3>
-              <p class="mt-2 text-sm text-sm leading-loose text-gray-500 text-center font-light">Reach a product-market
-                fit. Deliver features
-                and products that your
-                customers will use and buy.</p>
+              <h3 class="mt-6 text-sm font-semibold text-gray-900">Enhance Operational Efficiency</h3>
+              <p class="mt-2 text-sm text-sm leading-loose text-gray-500 text-center font-light">Streamline processes
+                and reduce operational costs through automated solutions.</p>
             </div>
             <div class="flex justify-center items-center flex-col gap-y-3">
               <div class="h-16 w-16 rounded-full flex justify-center items-center  bg-white relative">
                 <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Rocket.svg" alt=""
                   class="h-7 rounded-full w-auto absolute">
               </div>
-              <h3 class="mt-6 text-sm font-semibold text-gray-900">Boost chances of product success</h3>
-              <p class="mt-2 text-sm leading-loose text-gray-500 text-center font-light">Validate your product idea with
-                the market
-                and gain insight to
-                improve and to reduce the risk of failure.</p>
+              <h3 class="mt-6 text-sm font-semibold text-gray-900">Boost Customer Engagement</h3>
+              <p class="mt-2 text-sm leading-loose text-gray-500 text-center font-light">Develop applications that
+                resonate with target audiences and lead to increased user retention and loyalty.</p>
             </div>
             <div class="flex justify-center items-center flex-col gap-y-3">
               <div class="h-16 w-16 rounded-full flex justify-center items-center  bg-white relative">
                 <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Cart.svg" alt=""
                   class="h-7 rounded-full w-auto absolute">
               </div>
-              <h3 class="mt-6 text-sm font-semibold text-gray-900">Align market needs</h3>
-              <p class="mt-2 text-sm leading-loose text-gray-500 text-center font-light">Identify and align to market
-                needs to reach
-                better ROI and meet
-                business objectives.</p>
+              <h3 class="mt-6 text-sm font-semibold text-gray-900">Stay Competitive</h3>
+              <p class="mt-2 text-sm leading-loose text-gray-500 text-center font-light">Leverage cutting-edge
+                technologies to maintain a competitive edge in a rapidly evolving digital marketplace.</p>
             </div>
             <div class="flex justify-center items-center flex-col gap-y-3">
               <div class="h-16 w-16 rounded-full flex justify-center items-center  bg-white relative">
                 <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Growth.svg" alt=""
                   class="h-7 rounded-full w-auto absolute">
               </div>
-              <h3 class="mt-6 text-sm font-semibold text-gray-900">Research and understand the market</h3>
-              <p class="mt-2 text-sm leading-loose text-gray-500 text-center font-light">Gain an edge by understanding
-                your target
-                market, analyzing trends,
-                and conducting research.</p>
+              <h3 class="mt-6 text-sm font-semibold text-gray-900">Achieve Scalability</h3>
+              <p class="mt-2 text-sm leading-loose text-gray-500 text-center font-light">Build solutions that grow with
+                your business, accommodating increased usage and expanding functionalities effortlessly</p>
             </div>
           </div>
         </div>
@@ -383,15 +375,14 @@
         <div class="lg:flex space-y-10 lg:space-y-0 p-6 lg:p-0 max-w-7xl mx-auto gap-x-10">
           <div class="space-y-6 flex justify-center items-center flex-col lg:justify-start lg:items-start">
             <h2
-              class="text-xl font-bold tracking-tight text-gray-900 sm:text-xl max-w-md lg:max-w-sm text-center lg:text-start">
+              class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl max-w-md lg:max-w-sm text-center lg:text-start">
               Develop your product with
               the help
               of <span class="text-blue-500 text-w">experienced Product Managers</span></h2>
-            <p class="text-sm leading-loose text-center lg:text-start">Develop your product with the help of experienced
-              Product ManagersOur
-              expert and holistic
-              approach,
-              paired with an entrepreneurial spirit, gives you a trusted partner to help build real, working software.
+            <p class="text-sm leading-loose text-center lg:text-start max-w-4xl">Our product design process at Buildr is
+              meticulously structured to enhance user engagement and conversion rates. Starting with a deep dive into
+              user behavior and needs during the discovery phase, we move to crafting intuitive navigations and engaging
+              UX/UI designs
             </p>
             <div class="hidden lg:flex justify-start items-start pt-6 lg:pt-14">
               <p class="border-b border-gray-500 font-medium flex items-center cursor-pointer pb-0.5 gap-x-2">Let's work
@@ -401,17 +392,16 @@
                 </svg></p>
             </div>
           </div>
-          <dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
+          <dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 pl-10">
             <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white">
                   <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Users.svg" class="h-6 w-6" />
                 </div>
-                Product Squad
+                User-Centered Design
               </dt>
-              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">We don't only develop software. We fully
-                delegate the
-                development of your product to a cross-functional Product Squad.
+              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">We focus on understanding the user's needs and
+                behaviors, ensuring that our designs are intuitive and accessible.
               </dd>
             </div>
             <div>
@@ -420,32 +410,31 @@
                   <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Handshake.svg"
                     class="h-6 w-6" />
                 </div>
-                Product Consulting
+                Engaging Visuals and Interactions
               </dt>
-              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">Product Managers don't have to be full-time.
-                We
-                provide ad-hoc product consulting exactly when you need it.</dd>
+              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">Our UX/UI designs are not only appealing but
+                also functional, enhancing the overall user experience and encouraging longer engagement.</dd>
             </div>
             <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white">
                   <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Client.svg" class="h-6 w-6" />
                 </div>
-                Product Manager
+                Conversion Optimization:
               </dt>
-              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">Whether you need a permanent or temporary
-                Product
-                Manager on your team, we're here to help.</dd>
+              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">By integrating relevant content and consistent
+                branding, we create a seamless experience that drives conversions.</dd>
             </div>
             <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white">
                   <img src="https://www.netguru.com/hubfs/_N19%20Modules/Icons/Benefits/Bulb-2.svg" class="h-6 w-6" />
                 </div>
-                Product workshops
+                By integrating relevant content and consistent branding, we create a seamless experience that drives
+                conversions.
               </dt>
-              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">Gain quick-to-use insights with workshops
-                concentrated on Product Research, Discovery, and Validation services.</dd>
+              <dd class="mt-1 text-sm leading-7 text-gray-600 font-light">We ensure that designs are scalable and
+                maintain coherence across all teams and platforms, facilitating a unified brand experience.</dd>
             </div>
           </dl>
           <div class="flex justify-center items-center lg:hidden pt-6 lg:pt-14">

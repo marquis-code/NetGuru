@@ -3,16 +3,18 @@
     <!-- Left Marquee Container -->
     <div class="flex flex-col overflow-hidden h-full w-1/2">
       <div class="marquee marquee-left space-y-3">
-        <div class="image-container" v-for="n in 10" :key="`left-${n}`">
-          <img src="@/assets/img/bg.png" alt="marquee image" />
+        <div class="image-container relative" v-for="n in 10" :key="`left-${n}`">
+          <img :src="require(`@/assets/img/bg${n}.jpg`)" alt="marquee image" />
+          <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
         </div>
       </div>
     </div>
     <!-- Right Marquee Container -->
     <div class="flex flex-col overflow-hidden h-full w-1/2">
       <div class="marquee marquee-right space-y-3">
-        <div class="image-container" v-for="n in 10" :key="`right-${n}`">
-          <img src="@/assets/img/bg.png" alt="marquee image" />
+        <div class="image-container relative" v-for="n in 10" :key="`right-${n}`">
+          <img :src="require(`@/assets/img/bg${n}.jpg`)" alt="marquee image" />
+          <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
         </div>
       </div>
     </div>
