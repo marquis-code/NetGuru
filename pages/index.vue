@@ -118,11 +118,12 @@
       <MarqueeSection class="w-6/12" />
     </section>
     <div class="space-y-4 p-6 lg:hidden pt-16">
-      <h1 class="text-4xl font-black max-w-lg">It's time to grow your beauty business.</h1>
-      <p class="font-medium max-w-lg text-sm leading-snug">Relume Beauty is an all-in-one booking management platform
-        that
-        instantly connects you to customers seeking beauty service in your area.</p>
-      <div class="text-white bg-black py-3 px-6 text-sm rounded lg:w-2/12 pt-4 text-center">Learn more</div>
+      <h1 class="text-4xl font-black max-w-lg">Transform Your Digital Horizon with <span
+        class="text-blue-500">Buildr</span></h1>
+      <p class="font-medium max-w-lg text-sm leading-snug">Where Innovation Meets Execution! Experience the cutting-edge in
+        web and mobile application development, paired with bespoke software solutions that propel startups,
+        scale-ups, and enterprises into the future.</p>
+      <div class="text-white bg-black py-2.5 px-6 text-sm rounded lg:w-2/12 pt-4 text-center">Learn more</div>
     </div>
     <!-- <div class="bg-gray-900 z-50">
       <div class="lg:hidden" role="dialog" aria-modal="true" v-if="isSideNavOpen">
