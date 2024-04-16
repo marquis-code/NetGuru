@@ -837,60 +837,58 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-10 lg:grid-cols-3 space-y-16 lg:space-y-0">
           <div class="flex flex-col">
-            <img class="h-12 w-20 lg:w-32 self-start"
-              src="	https://www.netguru.com/hubfs/_N23/assets/logos/moonfare.svg" alt="">
+            <img class="h-12 w-20 lg:w-32 self-start object-cover object-center" src="@/assets/img/techventure.png"
+              alt="">
             <figure class="lg:mt-10 flex flex-auto flex-col justify-between">
               <blockquote class="text-sm font-light leading-8 text-gray-900">
-                <p>My experience working with Netguru has been excellent. Outstanding software teams are resilient, and
-                  our developers at Netguru have certainly proven to be that. Our Netguru friends have become as close
-                  to team members as possible, and I am grateful for the care and excellence they have provided.</p>
+                <p>Partnering with Buildr transformed our approach to digital innovation. Their team not only delivered
+                  a robust application that has driven our growth, but they also guided us through the entire process,
+                  ensuring we understood every step. Their commitment to quality and efficiency is unmatched.</p>
               </blockquote>
               <figcaption class="mt-10 flex items-center gap-x-6">
                 <img class="lg:h-14 lg:w-14 rounded-full bg-gray-50"
                   src="https://www.netguru.com/hs-fs/hubfs/Gerardo2.jpg?width=40&height=40&name=Gerardo2.jpg" alt="">
                 <div class="text-base">
-                  <div class="font-semibold text-gray-900">Gerardo Bonilla</div>
-                  <div class="mt-1 text-gray-500 text-sm lg:text-base">Product Manager at Moonfare</div>
+                  <div class="font-semibold text-gray-900">John D</div>
+                  <div class="mt-1 text-gray-500 text-sm lg:text-base">CEO of TechVenture Inc.</div>
                 </div>
               </figcaption>
             </figure>
           </div>
           <div class="flex flex-col">
-            <img class="h-12 w-20 lg:w-32 self-start" src="	https://www.netguru.com/hubfs/_N23/assets/logos/countr.svg"
+            <img class="h-12 w-20 lg:w-32 self-start object-cover object-center" src="@/assets/img/retailworld.png"
               alt="">
             <figure class="mt-10 flex flex-auto flex-col justify-between">
               <blockquote class="text-sm font-light leading-8 text-gray-900 pb-6">
-                <p>Working with Netguru has been a fantastic experience. We received a lot of support in terms of
-                  thinking about how we track metrics, how we design this properly, and how we build the architecture.
-                  We are extremely grateful for making our platform what it is today.</p>
+                <p>The team at Buildr is phenomenal at what they do. From initial concept through to final product design, their attention to detail and commitment to excellence have helped us launch products that our customers love. Their impact on our user experience has been positively transformative.</p>
               </blockquote>
               <figcaption class="lg:mt-10 flex items-center gap-x-6">
                 <img class="lg:h-14 lg:w-14 rounded-full bg-gray-50"
                   src="https://www.netguru.com/hs-fs/hubfs/Manon_Roux.jpg?width=40&height=40&name=Manon_Roux.jpg"
                   alt="">
                 <div class="text-base">
-                  <div class="font-semibold text-gray-900">Manon Roux</div>
-                  <div class="mt-1 text-gray-500 text-sm lg:text-base">Founder at Countr</div>
+                  <div class="font-semibold text-gray-900">Michael T.</div>
+                  <div class="mt-1 text-gray-500 text-sm lg:text-base">Product Manager at RetailWorld</div>
                 </div>
               </figcaption>
             </figure>
           </div>
           <div class="flex flex-col">
-            <img class="h-12 w-20 lg:w-32 self-start" src="https://www.netguru.com/hubfs/_N23/assets/logos/solaris.svg"
+            <img class="h-12 w-20 lg:w-32 self-start object-cover object-center" src="@/assets/img/finsecure.png"
               alt="">
             <figure class="lg:mt-10 flex flex-auto flex-col justify-between">
               <blockquote class="text-sm font-light leading-8 text-gray-900">
-                <p>Whenever we faced challenges this year, we could rely on Netguru for our urgent staffing needs and
-                  time-critical deliverables. The Netguru team has gone above and beyond any expectations of what a
-                  strong and reliable partner can be.</p>
+                <p>’m impressed with Buildr’s commitment to security and their meticulous approach to software
+                  development. They’ve played a critical role in enhancing our financial platforms, ensuring they are
+                  not only efficient but also secure against evolving digital threats</p>
               </blockquote>
               <figcaption class="mt-10 flex items-center gap-x-6">
                 <img class="h-14 w-14 rounded-full bg-gray-50"
                   src="https://www.netguru.com/hs-fs/hubfs/Solarisbank%20new%20logo%20and%20quote/Hima%20Mandali%20Solarisbank%20CTO.jpeg?width=40&height=40&name=Hima%20Mandali%20Solarisbank%20CTO.jpeg"
                   alt="">
                 <div class="text-base">
-                  <div class="font-semibold text-gray-900">Hima Mandali</div>
-                  <div class="mt-1 text-gray-500 text-sm lg:text-base">CTO at Solarisbank</div>
+                  <div class="font-semibold text-gray-900">Rachel K</div>
+                  <div class="mt-1 text-gray-500 text-sm lg:text-base">CTO at FinSecure</div>
                 </div>
               </figcaption>
             </figure>
@@ -1032,7 +1030,7 @@
 
     </section>
     <section id="work">
-      <div class="relative isolate overflow-hidden pt-14 h-[500px]">
+      <div class="relative isolate overflow-hidden pt-32 h-[500px]">
         <img
           src="https://www.netguru.com/hs-fs/hubfs/How%20Web%20Development%20Company%20Can%20Help%20You%20Kickstart%20Your%20Business.jpg?width=2560&height=878&name=How%20Web%20Development%20Company%20Can%20Help%20You%20Kickstart%20Your%20Business.jpg"
           alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
@@ -1046,15 +1044,14 @@
         </div>
         <div class="mx-auto max-w-2xl relative">
           <div class="text-center absolute z-50">
-            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Start your project with us or take
-              existing one <span class="text-blue-600">to next level</span>
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Innovate, Scale, Succeed</span>
             </h1>
-            <p class="mt-6 text-lg leading-8 text-gray-300">Share your challenge and our team will support you on a
-              journey to deliver a revolutionary digital product</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Ready to scale and succeed? Let Buildr be your partner in
+              innovation. Book your free strategy session now and take the first step towards scalable success.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="#"
-                class="rounded-md bg-blue-500 px-6 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Estimate
-                project</a>
+                class="rounded-md bg-blue-500 px-6 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Get
+                started</a>
             </div>
           </div>
         </div>

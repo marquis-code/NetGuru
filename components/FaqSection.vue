@@ -44,28 +44,52 @@ export default {
       maxHeight: 0, // You might need to adjust this based on your content
       faqs: [
         {
-          id: 1, question: 'Why are Product Managers important?', answer: `Product Managers are a guiding hand for your team. They are responsible for assisting in building products that surpass business objectives and solve customer needs. In summary, they maximize success at every step of the product's life-cycle by managing a team's timeline and quality of work, allowing the team to reach a potential that they never thought possible.`
+          id: 1, question: 'What industries do you specialize in for software development?', answer: `Buildr has extensive experience in a wide range of industries, including technology, healthcare, finance, education, and retail. Our diverse expertise allows us to tailor solutions that meet industry-specific challenges and regulatory requirements.`
         },
         {
-          id: 2, question: 'What is the difference between a Product Manager and a Project Manager?', answer: 'A Product Manager is someone who discovers what users need and prioritizes what to build next, rallying the team around a product roadmap. In contrast, a Project Owner is responsible for internal processes, procedural work, timeline, and budgeting.'
+          id: 2, question: 'How does Buildr ensure that the developed app is user-friendly?', answer: 'Our development process integrates continuous user feedback and usability testing. By focusing on intuitive design and user-centered functionality from the earliest stages, we ensure our applications are accessible and easy to navigate for a diverse user base.'
         },
         {
           id: 3,
-          question: `What is Agile Product Management?
+          question: ` Can Buildr handle the scaling of applications for growing businesses?
 `,
-          answer: 'Agile Product Management is essentially how it sounds. It encourages an adaptive approach to product planning and implementation by quickly responding to feedback. This information helps to build products that customers want and need.'
+          answer: 'Absolutely. Scalability is at the heart of our development philosophy. We design applications with the potential for growth, ensuring they can handle increasing loads and users without compromising performance or security.'
         },
         {
           id: 4,
-          question: `Is Product Management something for your business?
+          question: `What is included in your quality assurance process?
 `,
-          answer: 'Much depends on the type of your organization, your product, your current needs, problems, requirements, and the product knowledge, skills, and resources that you need. Schedule a commitment-free meeting with us and let us look at your business with our product eyes.'
+          answer: 'Our quality assurance process includes comprehensive manual testing and automated tests covering functionality, performance, security, and user experience aspects. This rigorous testing ensures that the final product is reliable and market-ready..'
         },
         {
           id: 5,
-          question: `Why is strategy planning important to your business?
+          question: `How do you handle product design for multiple platforms (e.g., Android, iOS, web)?
 `,
-          answer: 'Strategy planning is a key to success — finding a way to reach for the top, then executing the plan and measuring results. Apart from formulating a strategy, a product expert also coordinates its execution with relevant teams. Setting and measuring objectives and key results helps to effectively drive growth.'
+          answer: 'Our product design team employs a responsive design strategy to ensure seamless functionality and aesthetic coherence across all platforms, from mobile devices to desktops. We use the latest tools and standards to maintain performance and user experience regardless of the platform.'
+        }, {
+          id: 6,
+          question: 'What is your approach to project management and communication during a project?',
+          answer: 'We use an agile project management approach, allowing for flexibility and iterative progress through regular sprints. Communication is transparent and frequent, with regular updates and checkpoints with clients to ensure alignment and satisfaction.'
+        },
+        {
+          id: 7,
+          question: 'How long does it typically take to develop a custom application?',
+          answer: `The development timeline varies based on the project's complexity, scope, and specific client requirements. Typically, a project can take anywhere from a few weeks to several months. We provide a detailed timeline after the initial project analysis phase.`
+        },
+        {
+          id: 8,
+          question: 'Do you provide support and maintenance after the application is launched?',
+          answer: `Yes, we offer comprehensive post-launch support and maintenance services to ensure your application remains up-to-date with the latest technology standards and is free from any operational issues.`
+        },
+        {
+          id: 9,
+          question: `How does Buildr stay ahead with the latest technologies and industry standards?`,
+          answer: `Our team continually educates themselves on emerging technologies and industry trends through regular training, workshops, and certification programs. This commitment ensures we are always equipped to provide innovative and cutting-edge solutions.`
+        },
+        {
+          id: 10,
+          question: `Can Buildr integrate existing systems with new applications?`,
+          answer: `Yes, we specialize in system integration and can seamlessly integrate new applications with your existing business systems to enhance functionality and user experience without disrupting your current operations.`
         }
       ]
     }
